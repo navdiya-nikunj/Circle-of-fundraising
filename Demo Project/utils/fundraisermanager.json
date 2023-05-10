@@ -1,0 +1,131 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_endTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_fundingamount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_fundraisertitle",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_fundraiserdescription",
+				"type": "string"
+			}
+		],
+		"name": "createfundraiser",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "fundraiserIDs",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "fundraisers",
+		"outputs": [
+			{
+				"internalType": "contract Fundraiser",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address[]",
+				"name": "_fundraiserlist",
+				"type": "address[]"
+			}
+		],
+		"name": "getfundraiserinfo",
+		"outputs": [
+			{
+				"internalType": "string[]",
+				"name": "fundraisertitle",
+				"type": "string[]"
+			},
+			{
+				"internalType": "string[]",
+				"name": "fundraiserdescription",
+				"type": "string[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "fundingamount",
+				"type": "uint256[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "organization",
+				"type": "address[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "endTime",
+				"type": "uint256[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "fundraiserState",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getfundraisers",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "_fundraisers",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
